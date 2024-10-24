@@ -27,7 +27,7 @@ html {
     background-color: #3b638b;
     color:#ffffff;
     text-align: center;
-    text-shadow: 2px 2px #0000000; 
+    text-shadow: 2px 2px #0000000;
     /*long form*/
     padding-top: 40px;
     padding-right: 40px;
@@ -68,7 +68,7 @@ html {
     list-style-type:none;
     background:none;
   }
-  header.primary nacv ul li a{
+  header.primary nav ul li a{
     color:#fff;
     font-size:1rem;
     text-decoration:none;
