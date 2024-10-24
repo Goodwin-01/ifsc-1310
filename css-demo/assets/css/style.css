@@ -1,3 +1,103 @@
-body{
-    background-color:aqua;
-}
+/*-------- css-demo ------------*/
+
+
+/*--------------- Box Sizing -------------------- */
+
+
+html {
+    box-sizing: border-box;
+    
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  
+  body{
+   font-family: "Agdasima", sans-serif;
+    
+  }
+  
+  main{}
+  
+  header.primary{
+    background-color: #3b638b;
+    color:#ffffff;
+    text-align: center;
+    text-shadow: 2px 2px #0000000; 
+    /*long form*/
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding left: 40px;
+    /*Single value short hand*/
+    padding:40px; 
+    /*T,R,B,L */
+    padding: 20px, 40px, 20px, 40px;
+  }
+  
+  header.primary h1{
+    font-size:2.4rem;
+    margin: 20px 0 0;
+    color:
+    
+  }
+  
+  header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none;
+  }
+  
+  header.primary h2{
+    font-size:1.3rem;
+    margin:0;
+  }
+  
+  header.primary nav{}
+  header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    background:none;
+    padding:10px 0;
+  }
+  header.primary ul li{
+    list-style-type:none;
+    background:none;
+  }
+  header.primary nacv ul li a{
+    color:#fff;
+    font-size:1rem;
+    text-decoration:none;
+    border:1px solid #c0c0c0;
+    background-color: rgba(0,0,0, .4);
+    border-radius:20px 10px;
+    padding:7.5px 10px;
+    transition: .4s
+  }
+  header.primary nav ul li a:hover{
+    background-color: rgba(0,0,0, .8);
+  }
+  
+  
+  
+  /*---------------- MEDIA QUERIES ---------------*/
+  
+  @media screen and (max-width: 900px){
+   
+    header.primary nav ul{
+    flex-direction:column;
+    gap: 20px;
+    max-width:200px;
+      margin:10px auto;
+   
+      
+    }
+   
+    header.primary nav a{
+      display:block;
+    
+    }
