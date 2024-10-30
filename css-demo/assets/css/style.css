@@ -5,99 +5,297 @@
 
 
 html {
-    box-sizing: border-box;
-    
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+  
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----------- Responsive images ----------------*/
+
+img{
+  max-width:100%;
+}
+
+/*------------- Utility Classes ------------------*/
+.container{
+  
+  width:80vw; 
+  max-width: 960px;
+  margin:40px auto;
+}
+
+.img-right{
+  float:right;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  margin: 10px 0 10px 20px;
+  border-radius: 50px;
+}
+.img-left{
+  float:left;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  margin: 10px 20px 10px 0;
+  border-radius: 50px;
+}
+
+
+.img center{
+  display:block;
+  margin: 20px auto;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+/*---------- Global Style ------------*/
+
+
+body{
+ font-family: "Agdasima", sans-serif;
+  margin: 0;
+}
+
+/*---------- Global Style ------------*/
+main{}
+
+header.primary{
+  background-color: #3b638b;
+  color:#ffffff;
+  text-align: center;
+  text-shadow: 1px 1px #000000; 
+  /*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding left: 40px;
+  /*Single value short hand*/
+  padding:40px;
+  /*T,R,B,L */
+  padding: 20px, 40px, 20px, 40px;
+  /* Two Value Top/Bottom / L/R */
+  padding: 20px 40px;
+}
+
+header.primary h1{
+  font-size:2.4rem;
+  margin: 20px 0 0;  
+}
+
+header.primary h1 a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size:1.3rem;
+  margin:0;
+}
+
+header.primary nav{
+  max-width:960px;
+  margin: auto;
+}
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  background:none;
+  padding:10px 0;
+}
+header.primary ul li{
+  list-style-type:none;
+  background:none;
+}
+header.primary nav ul li a{
+  color: #ffffff;
+  font-size:1rem;
+  text-decoration:none;
+  border:1px solid #c0c0c0;
+  background-color: rgba(0,0,0, .4);
+  border-radius:20px 10px;
+  padding:7.5px 10px;
+  transition: .4s
+}
+header.primary nav ul li a:hover{
+  background-color: rgba(0,0,0, .8);
+}
+
+#content{
+  line-weight: 1.4;
+}
+
+#content h2 {
+  color: #3b638b;
+  border-bottom: 1px dotted #darkgrey;
+  
+}
+
+#blog{
+  display:flex;
+  justify-content:space-around;
+  flex-direction: row;
+  gap:20px;
+  border-top:1px solic #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 40px 0 0 0;
+}
+
+#blog article.post {
+  box-shadow:0 4px 8px rgba(0,0,0,0.75);
+  padding: 2rem;
+  border-radius:4px;
+  font-size:.8rem;
+}
+
+#blog figure{
+  margin:0;
+}
+
+#blog figcaption, time.post-date{
+  text-transform:uppercase;
+  font-size:0.6rem;
+  text-align:center;
+  color: #c0c0c0;
+}
+
+#blog .post a{
+  color: #3b638b;
+}
+
+#practice h2{
+  color: #3b638b;
+  border-bottom: 1px dotted #cccccc;
+}
+
+#practice a{
+  color: #3b638b;
+}
+
+#practice a:hover{
+  text-decoration:none;
+}
+
+#practice h3{
+  border-left: 5px solid #3b638b;
+  padding-left: 5px 0 5px 10px;
+  
+}
+
+table{
+  width:100px;
+  border: 1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+caption{
+  font-weight: bold;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+thead{}
+tr:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+td:nth-child(2)
+td:nth-child(3){
+  text-align:right;
+}
+
+td:nth-child(n+2){
+  text-align:right;
+}
+
+tr:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+th{
+  background-color: #172635;
+  color: #ffffff;
+  padding: 7.5px;
+}
+td{
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+#practice ol{
+  list-style-type:lower-roman;
+
+}
+
+#practice ul li ul{
+  list-style-type:square;
+}
+
+#practice dl dt{
+  font-weight:bold;
+}
+
+dl dd{
+  margin:0;
+}
+
+dd+dt{
+  margin-top:20px;
+  color:red;
+}
+
+
+aside[role="complementary"]{
+  background-color: #172635;
+  color:#ffffff;
   
   
+}
+
+aside .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+aside article.widget a{
+  color:#ffffff;
+}
+
+aside article.widget a:last-of-type{
+  display:block;
+  margin-top: 20px;
+  text-align:right;
+}
+
+aside article.widget footer{
+  display:none;
+}
+
+#colophon{
   
-  body{
-   font-family: "Agdasima", sans-serif;
-    
-  }
-  
-  main{}
-  
-  header.primary{
-    background-color: #3b638b;
-    color:#ffffff;
-    text-align: center;
-    text-shadow: 2px 2px #0000000;
-    /*long form*/
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding left: 40px;
-    /*Single value short hand*/
-    padding:40px; 
-    /*T,R,B,L */
-    padding: 20px, 40px, 20px, 40px;
-  }
-  
-  header.primary h1{
-    font-size:2.4rem;
-    margin: 20px 0 0;
-    color:
-    
-  }
-  
-  header.primary h1 a{
-    color:#ffffff;
-    text-decoration:none;
-  }
-  
-  header.primary h2{
-    font-size:1.3rem;
-    margin:0;
-  }
-  
-  header.primary nav{}
+}
+
+
+
+
+/*---------------- MEDIA QUERIES ---------------*/
+
+@media screen and (max-width: 900px){
+ 
   header.primary nav ul{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    background:none;
-    padding:10px 0;
-  }
-  header.primary ul li{
-    list-style-type:none;
-    background:none;
-  }
-  header.primary nav ul li a{
-    color:#fff;
-    font-size:1rem;
-    text-decoration:none;
-    border:1px solid #c0c0c0;
-    background-color: rgba(0,0,0, .4);
-    border-radius:20px 10px;
-    padding:7.5px 10px;
-    transition: .4s
-  }
-  header.primary nav ul li a:hover{
-    background-color: rgba(0,0,0, .8);
-  }
-  
-  
-  
-  /*---------------- MEDIA QUERIES ---------------*/
-  
-  @media screen and (max-width: 900px){
-   
-    header.primary nav ul{
-    flex-direction:column;
-    gap: 20px;
-    max-width:200px;
-      margin:10px auto;
-   
-      
-    }
-   
-    header.primary nav a{
-      display:block;
+  flex-direction:column;
+  gap: 20px;
+  max-width:200px;
+    margin:10px auto;
+ 
     
-    }
+  }
+ 
+  header.primary nav a{
+    display:block;
+  
+  }
