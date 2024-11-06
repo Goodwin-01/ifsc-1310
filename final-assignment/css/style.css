@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    width: 100%;
+}
+
+.clear-both{
+    clear: both;
+}
+
+.nav{
+    background: #04334b;
+    display: block;
+    height: 100px;
+}
+
+.nav .left{
+    width: 50%;
+    float: left;
+}
+
+.nav .left img{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.nav .right ul li{
+    display: inline;
+    text-align: right;
+    float: right;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.nav .right ul li a{
+    color: #ffff;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.nav .right{
+    width: 50%;
+    float: left;
+    padding: 20px 0px;
+}
+
+.nav .left img{
+    width: 200px;
+}
+
+.welcome{
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.welcome img{
+
+}
+
+.overview{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.overview .left{
+    width: 50%;
+    float: left;
+}
+
+
+.overview .right{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.overview .right img{
+    width: 50%;
+}
+
+
+
+.configuration{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.configuration .left{
+    width: 50%;
+    float: left;
+}
+
+
+.configuration .right{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.configuration .right img{
+    width: 50%;
+}
