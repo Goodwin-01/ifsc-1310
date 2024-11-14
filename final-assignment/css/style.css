@@ -102,3 +102,26 @@ img{
 .configuration .right img{
     width: 50%;
 }
+
+.crew{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.crew .left{
+    width: 50%;
+    float: left;
+}
+
+
+.crew .right{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.crew .right img{
+    width: 50%;
+}
+
+
+
