@@ -124,4 +124,20 @@ img{
 }
 
 
+.faq{
+    width: 100vh;
+    padding: 100px;
+    margin: 0 auto;
+}
 
+.faq .faq-item{
+    padding-bottom: 50px;
+}
+
+.faq .faq-item h2{
+    padding-bottom: 10px;
+}
+
+.faq .faq-item p{
+    text-align: justify;
+}
