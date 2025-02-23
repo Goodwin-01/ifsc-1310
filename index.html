@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>IFSC 1310 | Tavon Goodwin</title>
-  <meta name="description" content="Keyword Rich Description">
-  <meta name="author" content="Tavon Goodwin">
-  <link href="assets/css/style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin: 0 auto;
+            width: 600px;
+            border: 3px solid blue;
+            padding: 0 2em 1em;
+        }
+        h1 {
+            color: blue;
+        }
+        label {
+            display: inline-block;
+            width: 5em;
+        }
+    </style>
 </head>
-
 <body>
-  <h1>Tavon Goodwin</h1>
-  <nav>
-    <ul>
-        <li><a href="prototype/index.html">Prototype HTML Assignment</a></li>
-        <li><a href="css-demo/index.html">CSS-Demo Assignment</a></li>
-        <li><a href="css-diner/index.html">CSS Diner</a></li>
-        <li><a href="img-manipulation/index.html">Img-manipulation</a></li>
-        <li><a href="flex-froggy/index.html">flex-froggy</a></li>
-       
-          <li><a href="bear-on-moon/index.html">Bear-on-moon</a></li>
-          <li><a href="thoughts-on-progressive-enhancement/index.html">Thoguhts on Progressive Enhacements</a></li>
-          <li><a href="slick-demo/index.html">slick-demo</a></li>
-          <ul>
-            <li>Positioning Labs
-            <li><a href="positioning-labs/float-1.html">Float 1</a></li>
-            <li><a href="positioning-labs/float-2.html">Float 2</a></li>
-            <li><a href="positioning-labs/absolute-1.html">Absolute 1</a></li>
-            <li><a href="positioning-labs/absolute-2.html">Absolute 2</a></li>
-
-          </ul>
-        </li>
-        <li><a href="DragonX/">Dragon X </a></li>
-    </ul>
-  </nav>
-  <h3>Thoughts on Accessibility</h3>
-  <p> 
-    Web accessibility means creating websites that can be used by everyone, including people with disabilities. It involves designing and developing web pages in a way that ensures that individuals with visual, hearing, motor, or cognitive impairments can easily navigate, understand, and interact with the content.
-</p>
-<p>
-    This can include using features like text descriptions for images, keyboard navigation, and readable fonts, making sure that the web is inclusive and usable by people of all abilities. In short, web accessibility is about breaking down barriers and ensuring equal access to information and services for all users.
-</p>
-<p>
-  <h2> Thoughts on Progressive Enhacements </h2>
-  <p> 
-      Progressive enhancement is a web development strategy that focuses on building a core, functional experience for all users, regardless of the device or browser they are using. At its heart, progressive enhancement prioritizes content and usability, ensuring that even users with older technology can access the core features of a website. Advanced functionality, such as enhanced visuals or interactivity, is added for users with modern browsers and devices.
-  </p>
-  <p>
-      In simpler terms, it’s like designing a cake where the basic sponge is delicious on its own, but additional layers of frosting and decorations are included for those who can enjoy them. This approach ensures accessibility and inclusivity while allowing developers to take advantage of modern web capabilities.
-  </p>
-  <p>
+    <h1>Styled Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
