@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Page</title>
+    <title>MPG Calculator</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -23,13 +23,50 @@
     </style>
 </head>
 <body>
-    <h1>Styled Form</h1>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Submit">
-    </form>
+
+<h1>MPG Calculator</h1>
+<form id="mpgForm">
+    <label for="miles">Miles:</label>
+    <input type="text" id="miles" name="miles"><br><br>
+
+    <label for="gallons">Gallons:</label>
+    <input type="text" id="gallons" name="gallons"><br><br>
+
+    <input type="submit" value="Calculate MPG">
+</form>
+
+<p id="result"></p>
+
+<script>
+    // Listen for the form submission
+    document.getElementById('mpgForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // This prevents the page from refreshing
+
+        // Get the values that the user entered
+        var miles = document.getElementById('miles').value;
+        var gallons = document.getElementById('gallons').value;
+
+        // Convert them to numbers (because they are initially strings)
+        miles = parseFloat(miles);
+        gallons = parseFloat(gallons);
+
+        // Check if the values are numbers and if gallons is not zero
+        if (isNaN(miles) || isNaN(gallons) || gallons === 0) {
+            document.getElementById('result').textContent = "Please enter valid numbers. Gallons cannot be zero.";
+        } else {
+            // Calculate the MPG (miles divided by gallons)
+            var mpg = miles / gallons;
+
+            // Round the result to two decimal places
+            mpg = mpg.toFixed(2);
+
+            // Display the result
+            document.getElementById('result').textContent = "MPG: " + mpg;
+        }
+    });
+</script>
+
 </body>
 </html>
+
+    
